@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/espaceChat.css" />
+  </head>
+  <body>
+    <%-include("navbar/navbar")  %>
+<div class="img1">
+    <img src="/images/tyler-franta-iusJ25iYu1c-unsplash.jpg" alt="">
+    <p>Cher client nous vous accompagnons avec précision ...</p>
+  </div>
+    <main>
+        <p class="texte1"> Liste des Opérations</p>
+        <div class="operations">
+            <div class="icon solde shadow">
+                <img src="/images/wpf_bank-cards.png" alt="" srcset="">
+                <a href="espaceClientSolde"><p>Consulter son solde</p></a>
+                
+            </div>
+            <div class="icon transfert shadow">
+                
+                <img src="/images/fa6-solid_money-bill-transfer.png" alt="" srcset="">
+                <a href="espaceDepot"><p>Effectuer un Transfert</p></a>
+                
+            </div>
+            <div class="icon message shadow">
+                <img src="/images/subway_sms-3.png" alt="" srcset="">
+                <a href="espaceChat"><p>Envoyer un message à BestBank</p></a>
+            </div>
+        </div>
+
+        
+        <div class="div-form"></div>
+    
+    
+    <div class="card">
+      <div class="chat-header">Service client</div>
+      <div class="chat-window">
+        <ul class="message-list"></ul>
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          class="message-input"
+          placeholder="tapez votre message ici"
+          id="message"
+        />
+        <button class="send-button">Envoyer</button>
+      </div>
+    </div>
+</main>
+<script src="/js/chat.js"></script>
+<%-include("footer/footer")  %>
+  </body>
+</html>
